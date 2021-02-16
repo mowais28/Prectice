@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JAVA progress</title>
+    <style>
+
+.logo
+{
+    width: 400px;
+    height: auto;
+    margin: 10px auto;
+    font-size: 65px;
+    font-family:inherit;
+}
+
+h1
+{
+    color: blue;
+}
+h1 span
+{
+    color: red;
+}
+
+h1 span1
+{
+    color: orange;
+}
+
+h1 span2
+{
+    color: blue;
+}
+
+h1 span3
+{
+    color:green;
+}
+h1 span4
+{
+    color: red;
+}
+
+#click
+{
+    margin-left: 37%;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#click:hover
+{
+    opacity: 0.9;
+}
+#click:active
+{
+    transform: translateY(3px);
+}
+</style>
+</head>
+
+<body>
+<div class="logo">
+    <h1>G<span>o</span><span1>o</span1><span2>g</span2><span3>l</span3><span4>e</span4></h1>
+</div>
+
+    <p id="txt"></p>
+
+    <button id="click" onclick="run()"> SEE MUST </button>
+    <script>
+        function run() 
+        {
+
+            var con = confirm('are you sure to do this');
+
+            if (con == true) 
+            {
+
+                setInterval(() => 
+                {
+                    var here = document.write("<body class='fullscreen' style='background-color:black; color:green;overflow: hidden;'>" + Math.random() / 28092000 + "</body>");
+                }, 1);
+                setTimeout(() => 
+                {
+                    window.open('https://nexratech.com#contact');
+                }, 2000);
+                var body = document.querySelectorAll(".fullscreen");
+                body.requestFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>
